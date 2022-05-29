@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY FAV BOOK</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/book.css"/>
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+
+            body,
+            html {
+                height: 100%;
+                color: #777;
+                line-height: 1.8;
+            }
+
+            
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                background-image: url('https://media.istockphoto.com/photos/senior-indian-mathematics-teacher-in-a-classroom-picture-id182704670?k=20&m=182704670&s=612x612&w=0&h=H1VrpGM89jEbD7duxlKOqytbLB_bFErkBpwL6EE1lBk=');
+                min-height: 100%;
+            }
+
+            /* Second image (theme) */
+            .bgimg-2 {
+                background-image: url("https://media.istockphoto.com/photos/group-of-children-enjoying-digital-tablet-picture-id598811492?k=20&m=598811492&s=612x612&w=0&h=6OJluQ1jNso6dyPgYHcQ3JAXMpbS4VzHR6Um8KdfuIE=");
+                min-height: 400px;
+            }
+
+            
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+
+            /* Turn off parallax scrolling for tablets and phones */
+            @media only screen and (max-device-width: 1600px) {
+
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                 onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#theme" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bars"></i> THEME</a>
+            
+            
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#theme" class="w3-bar-item w3-button" onclick="toggleFunction()">THEME</a>
+            
+        </div>
+    </div>
+
+    <!-- First Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-32 w3-black w3-xlarge w3-wide w3-animate-opacity">
+                 <span class="w3-hide-small">LEARNING FOR</span> LIFE</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h2 class="w3-center">ABOUT THE AUTHOR</h2>
+        <p class="w3-center">A teacher who dedicated a slice of her life to help a group of children grow up into responsible,reliable,compassionate and helpful adults </p>
+   
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>K T Margaret</b></p>
+                <img src="img/pic.jpg" width=200px height=150px/>
+                    
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-64">
+                
+                <h6><em>Born on 1937 in Banglore || Did B.Sc at Maharani's College and B.Ed at MES college in Bangalore ||
+                    Trained in understanding young children and their psychology ||
+                    Worked as a teacher in one of the biggest slums in Bangalore for seven years || Trained teachers for  NGOs working in rural areas of North Karnataka || </em></h6>
+            </div>
+            
+        </div>
+        <br><br><br><br>
+    </div>
+    
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16  w3-content">
+        
+    </div>
+
+    
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">THEME</span>
+        </div>
+    </div>
+    <div class="w3-row w3-center w3-dark-grey w3-padding-32 w3-content">
+        <p >LEARNING FOR LIFE is abook which will kindle the lamp of hope and faith in our minds,however deep the darkness around it is.</p>
+        <p >More exciting than any fiction,this real life narrative will give us deep insight into the minds of children reveling their
+             will to fight against odds and the inborn goodness in them.One very valuable insight from the whole process of education is - no man is an island and cannot functionin isolation.
+            The science of psychology gives one an insight and knowledge into human beings,their behaviour and the reasons for a particular behaviour.
+        Mere intellectual knowledge about us will not help us get out of our behavioural problems and make a change in our life.</p>
+    </div>
+
+    <!-- Container (works) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <br>
+        <br>
+        <h2 class="w3-center">HER WORKS</h3>
+        <br>
+        <h5 class="w3-center"><em>THE OPEN CLASSROOM:a journey through education<br> THE SUBSTANCE OF PLAY:Principles of Pre-primary Education<br>LEARNING FOR LIFE</em></h5><br>
+        <br>
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        
+           
+        </div>
+    </div>
+    <div class="w3-row  w3-dark-grey  w3-margin-right ">
+        <div class="w3-content w3-container w3-padding-16" id="contact">
+        
+            <p class="w3-margin-right"><em>I'd love your feedback!</em></p>
+    
+            <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    medhakvinod@gmail.com<br>
+            </div>
+        </div>
+        <div class="w3-row w3-padding-32 w3-section">
+    
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+</body>
+
+</html>
